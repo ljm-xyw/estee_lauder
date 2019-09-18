@@ -12,9 +12,23 @@
   	<link rel="stylesheet" href="../css/index.css">
   	<link rel="stylesheet" href="../css/base.css">
   	<link rel="stylesheet" href="../css/product.css">
-  	<link rel="stylesheet" href="../css/product-min.css">
   	<link rel="stylesheet" href="../css/index-min.css">
+  	<link rel="stylesheet" href="../css/product-min.css">
   	<script src="../js/index.js"></script>
+  	<script>
+  		$(function(){
+  			$('.fix_left span').click(function(event) {
+  				$('.fix_left').fadeOut('500', function() {
+  					$('.fix_left').css('opacity', '0');
+  				});
+  			});
+  			$('.small_window span').click(function(event) {
+  				$('.small_window').fadeOut('500', function() {
+  					$('.small_window').css('opacity', '0');
+  				});
+  			});
+  		})
+  	</script>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top ljm_nav">
@@ -156,7 +170,8 @@
 			    <div class="thumbnail col-sm-12 col-md-12 more_left">
 			      	<img src="../images/product-beautiful.jpg" alt="...">
 			      	<img src="../images/product-beautiful.jpg" alt="" class="inside">
-			      	<div class="caption more_right">
+		    	</div>
+		    	<div class="caption more_right">
 		      			<h3>Beautiful Belle</h3>
 		      			<h4>真爱香水</h4>
 		      			<div class="moreadd">
@@ -202,7 +217,6 @@
 			      		</div>
 					
 			    	</div>
-		    	</div>
 			</div>
 		</div>
 		<div class="product">
@@ -221,7 +235,7 @@
 				<h3>评论</h3>
 				<div class="score">
 					<div class="row">
-					  	<div class="col-sm-6 col-md-4">
+					  	<div class="col-sm-4 col-md-4">
 						    <div class="thumbnail star">
 						      	<div class="caption">
 						      		<ol>
@@ -234,7 +248,7 @@
 						    	</div>
 					    	</div>
 						</div>
-						<div class="col-sm-6 col-md-4">
+						<div class="col-sm-4 col-md-4">
 						    <div class="thumbnail star">
 						      	<div class="caption">
 						      		<dl>
@@ -244,7 +258,7 @@
 						    	</div>
 					    	</div>
 						</div>
-						<div class="col-sm-6 col-md-4">
+						<div class="col-sm-4 col-md-4">
 						    <div class="thumbnail star s">
 						      	<div class="caption">
 						      		<ul>
@@ -332,6 +346,7 @@
 		<span></span>
 	</div>
 	<div class="small_window">
+		<span>X</span>
 		<div class="col-sm-12 col-md-12">
 		    <div class="thumbnail">
 		      	<img src="../images/xiangfen01.jpg" alt="...">
@@ -342,9 +357,11 @@
 		      		</a>
 			        <p class="price">¥630.00  - ¥890.00 </p>
 			        <a href="#">选择规格</a>
+
 		    	</div>
 	    	</div>
 		</div>
+
 	</div>
 
   	<div class="brand">
@@ -450,7 +467,7 @@
 	        <div class="modalbody">
 	            <div class="modaltitle">加入会员</div>
 	            <div class="modalcontent">
-			        <input type="text" class="col-lg-9" placeholder="名"><br>
+			        <input type="text" class="col-lg-9" placeholder="姓名"><br>
 			        <input type="text" class="col-lg-9" placeholder="电子邮箱"><br>
 			        <input type="text" class="col-lg-9" placeholder="密码"><label for="#"><i></i>显示密码</label>
 			        <input type="text" class="col-lg-9" placeholder="手机">
