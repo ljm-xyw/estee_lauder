@@ -1,0 +1,17 @@
+.more_right {
+    left: -210px;
+}
+.pro_right {
+    top: -270px;
+}
+.pro_left b {
+    width: 28%;
+}
+.product {
+    width: 60%;
+    position: relative;
+    left: 300px;
+    line-height: 25px;
+    top: 50px;
+	margin-bottom: 100px;
+}

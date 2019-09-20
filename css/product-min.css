@@ -27,7 +27,7 @@
 		top: 50px;
 	}
 	.clear{
-		height: 252vw;
+		height: 260vw;
 	}
 	.more_left{
 		top: 50px;
@@ -81,7 +81,7 @@
 		width: 100vw;
 	}
 	.score ol {
-	   margin-left: 25%;
+	   margin-left: 20%;
 	}
 	.score ol b{
 		display: inline-block;

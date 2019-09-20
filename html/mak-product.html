@@ -5,15 +5,31 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
  	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<link rel="shortcut icon" href="../images/favicon (3).ico">
- 	<title>香氛 | 雅诗兰黛(Estee Lauder)官方商城</title>
+ 	<title>持妆粉底液 SPF10/PA++ | 雅诗兰黛(Estee Lauder)官方商城</title>
  	<script src="../js/jquery-1.11.1.js"></script>
   	<script src="../js/bootstrap.js"></script> 
- 	<link rel="stylesheet" href="../css/bootstrap.css">
- 	<link rel="stylesheet" href="../css/index.css">
+ 	<link rel="stylesheet" href="../css/bootstrap.css">  	
+  	<link rel="stylesheet" href="../css/index.css">
   	<link rel="stylesheet" href="../css/base.css">
-  	<link rel="stylesheet" href="../css/fragrant.css">
+  	<link rel="stylesheet" href="../css/frag-product.css">
+  	<link rel="stylesheet" href="../css/mak-product.css">
   	<link rel="stylesheet" href="../css/index-min.css">
+  	<link rel="stylesheet" href="../css/product-min.css">
   	<script src="../js/index.js"></script>
+  	<script>
+  		$(function(){
+  			$('.fix_left span').click(function(event) {
+  				$('.fix_left').fadeOut('500', function() {
+  					$('.fix_left').css('opacity', '0');
+  				});
+  			});
+  			$('.small_window span').click(function(event) {
+  				$('.small_window').fadeOut('500', function() {
+  					$('.small_window').css('opacity', '0');
+  				});
+  			});
+  		})
+  	</script>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top ljm_nav">
@@ -21,17 +37,15 @@
 	    <ul>
 	      <li>
 	        <a href="#">【单品美肤礼】买1享1，买2享2（请在结账页面选取）</a>
-	        <span>X</span>
 	      </li>
 	      <li>
 	         <a href="#">【现货发售】全新高能小棕瓶，享高能修护2件礼</a>
-	         <span>X</span>
-	      </li>  
+	      </li>
 	    </ul>
+	    <span>X</span>
 	  </div>
 	  <div class="container-fluid ljm_navcon layout">
-	    <div class="ljm_navcon1 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-	      <div class="navbar-header login_nav">
+	    <div class="navbar-header login_nav">
 	      <button type="button" class="navbar-toggle collapsed ljm_slide" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
@@ -56,7 +70,7 @@
 	        <li><a href="#">ESTEE STORIES</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
-	    <div class="navbar user_login">
+	    <div class="navbar-right user_login">
 	      <div class="user_login_state">
 	         <span>登录/注册</span>
 	      </div>
@@ -67,8 +81,6 @@
 	        <span class="search_icon"></span>
 	      </div>
 	    </div>
-	    </div>
-	    
 	  </div><!-- /.container-fluid -->
 	</nav>
 	<section>
@@ -111,10 +123,11 @@
 		          	<dt class="text-center">一瓶稳住10大年轻维度</dt>
 		        </dl> 
 	        	<span>X</span>
-	        </div>    
-	    </div>        
-	    <div class="table layout makeup">
-	        <div class="row">
+	        </div>
+		  </div>
+		    
+		  <div class="table layout makeup">
+		    <div class="row">
 		        <dl class="col-sm-2 col-md-2 col-lg-2">
 			        <dt>底妆</dt>
 			        <a href="#"><dd>粉底液/妆前乳</dd></a>
@@ -148,139 +161,187 @@
 		        </dl>
 	        	<span>X</span>
 	        </div>
+		  </div>
 		</div>
 	</section>
 	
-	<div class="content text-center">
-		<h2>香氛</h2>
-		<hr>
-		<div class="btn-group btns">
-		  	<button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		    排序<span class="caret"></span>
-		  	</button>
-		  	<ul class="dropdown-menu">
-		    	<li>排序</li>
-		    	<li>名称</li>
-		    	<li>新品</li>
-		    	<li>评价</li>
-		    	<li>价格（从高到低）</li>
-		    	<li>价格（从低到高）</li>
-		  	</ul>
-		</div>
-		<div class="row">
-		  	<div class="col-sm-12 col-md-6 col-lg-4 con_row">
-			    <div class="thumbnail product">
-			      	<img src="../images/xiangfen01.jpg" alt="...">
-			      	<div class="caption">
-			      		<a href="#">
-			      			<h6>全新上市</h6>
-			      			<h4>Beautiful Belle</h4>
-			      			<h3>真爱香水</h3>
-			      		</a>
-				        <p class="price">¥630.00  - ¥890.00 </p>
-				        
-				        <div class="moreadd">
+	<div class="content">
+		<div class="con_img">
+			<div class="col-sm-12 col-md-12 clear">
+			    <div class="thumbnail col-sm-12 col-md-12 more_left">
+			      	<img src="../images/makeup1-pro.jpg" alt="...">
+			      	<img src="../images/makeup1-pro.jpg" alt="" class="inside i1">
+			      	<img src="../images/makeup2-pro.jpg" alt="" class="inside i2">
+			      	<img src="../images/makeup3-pro.jpg" alt="" class="inside i3">
+		    	</div>
+		    	<div class="caption more_right">
+		      			<h3>Double Wear</h3>
+		      			<h4>持妆粉底液 SPF10/PA++</h4>
+		      			<div class="moreadd">
 				        	<span class="stars"></span>
 					        <span class="stars"></span>
 					        <span class="stars"></span>
 					        <span class="stars"></span>
-					        <span class="stars"></span><br>
-				        	<a href="frag-product.html" class="more">查看详情</a><a href="#" class="add"></a>
+					        <span class="stars2"></span>
+				        	<span>(7条评论)</span>
 				        </div>
-			
+				        <h5 style="color: #040a2b;font-size: 14px;font-weight: bold;">功效</h5>
+				        <h6 style="color: #040a2b;font-size: 12px;">保湿遮瑕，持久不脱妆</h6>
+			      		<a href="#" class="more">产品详情</a>
+			      		<div class="price">
+			      			<div class="dropdown">
+							    <button class="btn btn-default dropdown-toggle btns" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							    30ML  &nbsp;&nbsp;￥390.00
+							        <span class="caret"></span>
+							    </button>
+							    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							        <li>17  &nbsp;&nbsp;BONE 1W1</li>
+							        <li>18  &nbsp;&nbsp;BONE 1W2</li>
+							        <li>19  &nbsp;&nbsp;BONE 1W3</li>
+							        <li>20  &nbsp;&nbsp;BONE 1W4</li>
+							    </ul>
+							</div>
+			      		</div>
+			      		<!-- 加入购物车数量 -->
+			      		<div class="number">
+			      			<!-- Single button -->
+							<div class="btn-group">
+							    <button type="button" class="btn btn-default dropdown-toggle btns" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    数量:1<span class="caret"></span>
+							    </button>
+							    <ul class="dropdown-menu counter">
+							        <li>数量:1</li>
+							        <li>数量:2</li>
+							        <li>数量:3</li>
+							        <li>数量:4</li>
+							        <li>数量:5</li>
+							        <li>数量:6</li>
+							    </ul>
+							</div>
+							<button class="item">添加到购物车</button>
+							<button class="buy">立即购买</button><br>
+							<a href="#">加入收藏</a>
+			      		</div>
+					
 			    	</div>
-		    	</div>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 con_row">
-			    <div class="thumbnail product">
-			      	<img src="../images/xiangfen02.jpg" alt="...">
-			      	<div class="caption">
-			      		<a href="#">
-			      			<h4>Modern Muse</h4>
-			      			<h3>缪斯淡香氛</h3>
-			      		</a>
-				        <p class="price">¥630.00  - ¥1420.00 </p>
-				        <h5>明媚花香与醇厚木香，双重魅力恣意展现优雅与自信</h5>
-				        <div class="moreadd">
-				        	<span class="stars"></span>
-					        <span class="stars"></span>
-					        <span class="stars"></span>
-					        <span class="stars"></span>
-					        <span class="stars1"></span><br>
-				        	<a href="#" class="more">查看详情</a><a href="#" class="add"></a>
-				        </div>
-			    	</div>
-		    	</div>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 con_row">
-			    <div class="thumbnail product">
-			      	<img src="../images/xiangfen03.jpg" alt="...">
-			      	<div class="caption">
-			      		<a href="#">
-			      			<h4>Modern Muse</h4>
-			      			<h3>缪斯淡香氛-魅意浓情</h3>
-			      		</a>
-				        <p class="price">¥630.00  - ¥1420.00 </p>
-				        
-				        <div class="moreadd">
-				        	<span class="stars"></span>
-					        <span class="stars"></span>
-					        <span class="stars1"></span>
-					        <span class="stars1"></span>
-					        <span class="stars1"></span><br>
-				        	<a href="#" class="more">查看详情</a><a href="#" class="add"></a>
-				        </div>
-			    	</div>
-		    	</div>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 con_row">
-			    <div class="thumbnail product">
-			      	<img src="../images/xiangfen04.jpg" alt="...">
-			      	<div class="caption">
-			      		<a href="#">
-			      			<h4>Pleasure</h4>
-			      			<h3>欢沁淡香熏</h3>
-			      		</a>
-				        <p class="price">¥460.00  - ¥640.00 </p>
-				        <h5>清新，活泼，闪亮</h5>
-				        
-				        <div class="moreadd">
-				        	<span class="stars"></span>
-					        <span class="stars"></span>
-					        <span class="stars"></span>
-					        <span class="stars"></span>
-					        <span class="stars1"></span><br>
-				        	<a href="#" class="more">查看详情</a><a href="#" class="add"></a>
-				        </div>
-			    	</div>
-		    	</div>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 con_row">
-			    <div class="thumbnail product">
-			      	<img src="../images/xiangfen05.jpg" alt="...">
-			      	<div class="caption">
-			      		<a href="#">
-			      			<h4>Pleasure</h4>
-			      			<h3>欢沁馥郁淡香氛</h3>
-			      		</a>
-				        <p class="price">¥660.00</p>
-				        <h5>迷人，女人味<br>丝绒般柔滑，魅惑</h5>
-				        
-				        <div class="moreadd">
-				        	<span class="stars"></span>
-					        <span class="stars"></span>
-					        <span class="stars"></span>
-					        <span class="stars"></span>
-					        <span class="stars"></span><br>
-				        	<a href="#" class="more">查看详情</a><a href="#" class="add"></a>
-				        </div>
-			    	</div>
-		    	</div>
 			</div>
 		</div>
+		<div class="product">
+			<div class="pro_left">
+				<h4>产品详情</h4>
+				Double Wear 雅诗兰黛持妆粉底液，油皮亲妈，不脱妆，更持久。<br>
+				·持久着妆：持久不脱粉的高能持妆力，油汗交加时底妆依然稳稳在线。<br>
+				·持久控油：中和油脂分泌，令妆容保持自然光泽。<br>
+				·持久水润：满蕴滋润精华，锁住肌肤水分，妆容持久盈润。<br>
+				·持久遮瑕：一抹遮瑕，毛孔、痘印、红血丝悄然隐褪。
+			</div>
+			<div class="pro_right">
+				<h5>功效</h5>
+				<p>保湿遮瑕，持久不脱妆</p>
+				<h5>肌肤类型</h5>
+				<p>所有肌肤类型</p>
+			</div>
+		</div>
+		<div class="comment">
+			<div class="middle">
+				<h3>评论</h3>
+				<div class="score">
+					<div class="row">
+					  	<div class="col-sm-4 col-md-4">
+						    <div class="thumbnail star">
+						      	<div class="caption">
+						      		<ol>
+										<span>5星</span><li><i></i></li><b>2</b>
+										<span>4星</span><li><i></i></li><b>1</b>
+										<span>3星</span><li></li><b>0</b>
+										<span>2星</span><li></li><b>0</b>
+										<span>1星</span><li></li><b>0</b>
+									</ol>
+						    	</div>
+					    	</div>
+						</div>
+						<div class="col-sm-4 col-md-4">
+						    <div class="thumbnail star">
+						      	<div class="caption">
+						      		<dl>
+										<dt>优点</dt>
+										<dd>无优点</dd>
+									</dl>
+						    	</div>
+					    	</div>
+						</div>
+						<div class="col-sm-4 col-md-4">
+						    <div class="thumbnail star s">
+						      	<div class="caption">
+						      		<ul>
+										<li>
+											<span class="star1"></span>
+									        <span class="star1"></span>
+									        <span class="star1"></span>
+									        <span class="star1"></span>
+									        <span class="star1 star2"></span>
+					   					</li>
+										<li>4.7</li>
+										<li><span>100% 的人会把这个产品推荐给朋友</span></li>
+										<li><a href="#">添加评论</a></li>
+									</ul>
+						    	</div>
+					    	</div>
+						</div>
+					</div>	
+				</div>
+			</div>	
+		</div>
+		<div class="layout img_con">
+		    <div>
+		      <a href="#"><img src="../images/makeup1-con.jpg" alt=""></a>
+		    </div>
+		    <div>
+		      <a href="#"><img src="../images/makeup2-con.jpg" alt=""></a>
+		    </div>
+		    <div>
+		      <a href="#"><img src="../images/makeup4-con.jpg" alt=""></a>
+		    </div>
+		    <div>
+		      <a href="#"><img src="../images/makeup5-con.jpg" alt=""></a>
+		    </div>
+		    <div>
+		      <a href="#"><img src="../images/makeup6-con.jpg" alt=""></a>
+		    </div>
+		    <div>
+		      <a href="#"><img src="../images/makeup7-con.jpg" alt=""></a>
+		    </div>
+		    <div>
+		      <a href="#"><img src="../images/makeup8-con.jpg" alt=""></a>
+		    </div>
+		</div>
+		
 	</div>
-	
+	<div class="fix_left">
+		<ul>
+			<li><a href="#">产品详情</a></li>
+			<li><a href="#">需要帮助吗？</a></li>
+		</ul>
+		<span></span>
+	</div>
+	<div class="small_window">
+		<span>X</span>
+		<div class="col-sm-12 col-md-12">
+		    <div class="thumbnail">
+		      	<img src="../images/makeup1-pro.jpg" alt="...">
+		      	<div class="caption text">
+		      		<a href="#">
+		      			<h5>Double Wear</h5>
+		      			<h6>持妆粉底液 SPF10/PA++</h6>
+		      		</a>
+			        <p class="price">30ml ¥390.00</p>
+			        <a href="#">选择色号</a>
 
+		    	</div>
+	    	</div>
+		</div>
+
+	</div>
 
   	<div class="brand">
     	<dl>
