@@ -75,12 +75,12 @@
 	.user_login .user_login_state{
 		position: relative;
 		left: 244px;
-		top: 7px;
+		top: -10px;
 	}
 	.user_login .user_item{
 		position: relative;
-		top: 28px;
-		left: 197px;
+		top: 40px;
+		left: 144px;
 	}
 	.user_login .user_item .item_icon{
 		position: relative;
@@ -119,7 +119,7 @@
 	}
 	.ft2{
 		position: relative;
-		left: 0%;
+		left: 3%;
 	}
 	.brand{
 		width: 100%;
@@ -154,11 +154,11 @@
 	}
 	.limited .footerform h6{
 		position: relative;
-		top: -43px;
+		top: -55px;
 	}
 	.limited .footerform a {
 		position: relative;
-		top: -69px;
+		top: -80px;
 		left: -125px;
 	}
 	.limited ul a {

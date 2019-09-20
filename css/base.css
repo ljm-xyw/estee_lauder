@@ -235,12 +235,12 @@ footer .footer_top a:hover{
 	width: 90px;
 	display: inline-block;
 	background: url('../images/icon.png');
-	background-position:  0 -3504px;
+	background-position:  0 -3506px;
 	padding-left: 25px;
 }
 .ft2 a:nth-of-type(2):hover{
 	background: url('../images/icon.png');
-	background-position:  0 -3550px;
+	background-position:  0 -3552px;
 }
 .menu{
 	width: 100%;
