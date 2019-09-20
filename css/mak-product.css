@@ -1,5 +1,5 @@
 .pro_right {
-    top: -230px;
+    top: -135px;
 }
 .product {
     width: 60%;
@@ -27,6 +27,7 @@
 @media (max-width: 767px) {
 	.pro_right {
 	    left: -40px;
+	    top: -230px;
 	}
 	.product {
 		margin-bottom: 150px;
